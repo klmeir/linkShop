@@ -1,7 +1,7 @@
 <!-- <h3 class="mt-5 mb-3">Product List</h3> -->
 <section class="layout">
   <div *ngFor="let product of products | async" class="card" style="width: 26rem;">
-    <img src="https://exitocol.vtexassets.com/arquivos/ids/22367671/play-station-5-slim-de-disco-1tb.jpg" class="card-img-top" alt="...">
+    <img src="{{product.pictureFileName}}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{product.name}}</h5>
       <p class="card-text">{{product.price}}</p>

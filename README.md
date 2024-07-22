@@ -2,6 +2,7 @@
 
 # Services-based architecture
 <img src="https://github.com/klmeir/linkShop/blob/master/img/linkshop_architecture.png" />
+<img src="https://github.com/klmeir/linkShop/blob/master/img/web-app.png" />
 
 # The main architectural patterns and styles that guide this solution are
 
