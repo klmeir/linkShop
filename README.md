@@ -1,7 +1,7 @@
 # linkShop with .NET (Microservices) / Angular
 
 # Services-based architecture
-<img src="https://github.com/klmeir/linkShop/blob/main/img/linkshop_architecture.png" />
+<img src="https://github.com/klmeir/linkShop/blob/master/img/linkshop_architecture.png" />
 
 # The main architectural patterns and styles that guide this solution are
 
