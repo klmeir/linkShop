@@ -51,10 +51,7 @@ src/store-app
 
 To run the project open the solution in visual studio, check the database connections string and run.
 
-## Docker and Docker Compose
-
-The execution of docker compose from visual studio is functional, at the moment we are working to execute it from command line...
-
+## Docker and Docker Compose (Cloud Design)
 To startup the whole solution, execute the following command:
 
 ```
