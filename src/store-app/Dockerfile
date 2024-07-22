@@ -27,7 +27,7 @@ COPY --from=build /app/dist/web-app/browser/* /usr/share/nginx/html/
 EXPOSE 80
 
 # Copiar la configuración personalizada de NGINX
-COPY nginx.conf /etc/nginx/nginx.conf
+#COPY nginx.conf /etc/nginx/nginx.conf
 
 # Cuando el contenedor inicia, ejecuta Nginx y mantiene el proceso en primer plano
 CMD ["nginx", "-g", "daemon off;"]
