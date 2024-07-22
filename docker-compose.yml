@@ -1,0 +1,42 @@
+services:
+  linkshop.app:
+    image: ${DOCKER_REGISTRY-}linkshop.app
+    build:
+      context: ./src/store-app/
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "8000:80"
+    depends_on:
+      - linkshop.catalog.api
+  linkshop.catalog.api:
+    image: ${DOCKER_REGISTRY-}catalog.api
+    build:
+      context: ./src/catalog-api/
+      dockerfile: Catalog.Api/Dockerfile
+    environment:
+      - ConnectionStrings__db=Server=db1;User Id=sa;Password=<YourStrong!Passw0rd>;Database=CatalogDB;Encrypt=False;TrustServerCertificate=True
+    ports:
+      - "8001:8080"
+    depends_on:
+      - db1
+  linkshop.ordering.api:
+    image: ${DOCKER_REGISTRY-}ordering.api
+    build:
+      context: ./src/ordering-api/
+      dockerfile: ordering.Api/Dockerfile
+    environment:
+      - ConnectionStrings__db=Server=db1;User Id=sa;Password=<YourStrong!Passw0rd>;Database=OrderingDB;Encrypt=False;TrustServerCertificate=True
+    ports:
+      - "8002:8080"
+    depends_on:
+      - db1
+  db1:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    environment:
+      MSSQL_SA_PASSWORD: "<YourStrong!Passw0rd>"
+      MSSQL_PID: "Express"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
