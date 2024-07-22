@@ -70,6 +70,6 @@ Then the following containers should be running on `docker ps`:
 
 
 - Browse to [http://localhost:8000](http://localhost:8000) and view linkShop
-- Browse to [http://localhost:8001](http://localhost:8001) and view the Catalog API  swagger documentation
-- Browse to [http://localhost:8000](http://localhost:8000) and view the Ordering API swagger documentation
+- Browse to [http://localhost:8001/swagger/index.html](http://localhost:8001/swagger/index.html) and view the Catalog API  swagger documentation
+- Browse to [http://localhost:8002/swagger/index.html](http://localhost:8002/swagger/index.html) and view the Ordering API swagger documentation
 
