@@ -10,6 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ordering-api", "ordering-api", "{58159B81-0DAD-40B7-B8B4-56DD393EDF49}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "store-app", "store-app", "{6342231F-C923-453E-A5B7-8FB0FF7F4CD9}"
+	ProjectSection(SolutionItems) = preProject
+		src\store-app\Dockerfile = src\store-app\Dockerfile
+		src\store-app\nginx.conf = src\store-app\nginx.conf
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Api", "src\catalog-api\Catalog.Api\Catalog.Api.csproj", "{E08D5F8A-8B17-4A18-BEA0-4B87CA28F148}"
 EndProject
@@ -26,6 +30,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Domain", "src\ordering-api\Ordering.Domain\Ordering.Domain.csproj", "{79979037-5E7B-408E-AC25-AA16C1AAE5E0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infrastructure", "src\ordering-api\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{D3711249-D97C-4B8D-BFF1-154010DCECB4}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1D75A629-C91A-4077-8E0E-329FF558BDA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +71,10 @@ Global
 		{D3711249-D97C-4B8D-BFF1-154010DCECB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3711249-D97C-4B8D-BFF1-154010DCECB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3711249-D97C-4B8D-BFF1-154010DCECB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D75A629-C91A-4077-8E0E-329FF558BDA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D75A629-C91A-4077-8E0E-329FF558BDA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D75A629-C91A-4077-8E0E-329FF558BDA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D75A629-C91A-4077-8E0E-329FF558BDA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
